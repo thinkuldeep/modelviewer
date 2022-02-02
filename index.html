@@ -13,6 +13,13 @@
     <a href = "intent://arvr.google.com/scene-viewer/1.0?file=https://thinkuldeep.com/modelviewer/Astronaut.glb&mode=ar_only#Intent;scheme=https;package=com.google.ar.core;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;">
       Launch Directly in Scene Viewer
     </a>
+
+    <br><br>
+
+    <a href = "intent://arvr.google.com/scene-viewer/1.0?file=https://thinkuldeep.com/modelviewer/scene.gltf&mode=ar_only#Intent;scheme=https;package=com.google.ar.core;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;">
+      Launch Scene 1 Directly in Scene Viewer
+    </a>
+
     <!-- <model-viewer> HTML element -->
     <model-viewer bounds="tight" src="Astronaut.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral" poster="poster.webp" shadow-intensity="1">
       <div class="progress-bar hide" slot="progress-bar">
@@ -24,14 +31,14 @@
       <div id="ar-prompt">
           <img src="ar_hand_prompt.png">
       </div>
-    </model-viewer>  
+    </model-viewer>
     <script src="script.js"></script>
     <!-- Loads <model-viewer> for browsers: -->
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-      
+
     <a href = "https://thinkuldeep.com/post/try-everything-in-your-space-webxr">
       Return to Article - Try everything in your space - WebXR
     </a>
-    
+
   </body>
 </html>
