@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Try everything in your space - WebXR</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Try Pikachu in your space - WebXR">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+    <!-- OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
+    <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+  </head>
+  <body>
+
+  <DIV style="width: 100%; text-align: center">
+  <button style="align-content: center ; text-align: center; border: 1px solid; padding: 20px ">
+     <a style="align-content: center ; text-align: center" href = "intent://arvr.google.com/scene-viewer/1.0?file=https://thinkuldeep.com/modelviewer/Pikachu_X_Kakashi-ar-ready.glb&mode=ar_only#Intent;scheme=https;package=com.google.ar.core;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;">
+      Bring Pikachu in your space  
+    </a>
+  </button>
+  </DIV>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer bounds="tight" src="Pikachu_X_Kakashi-ar-ready.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral" poster="Pikachu_Preview.png" shadow-intensity="1">
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+
+  <DIV style="width: 100%; text-align: center">
+      <button style="align-content: center ; text-align: center; border: 1px solid; padding: 20px ">
+          <a href = "https://thinkuldeep.com/post/try-everything-in-your-space-webxr">
+              Return to Article - Try everything in your space - WebXR
+          </a>
+      </button>
+  </DIV>
+  </body>
+</html>
