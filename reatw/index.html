@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>REA TW Logo</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="reatw.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="0.93" environment-image="whipple_creek_regional_park_04_1k.hdr" skybox-image="whipple_creek_regional_park_04_1k.hdr" shadow-softness="1" auto-rotate camera-orbit="-0.6712deg 42.76deg 224.2m" field-of-view="30deg">
+      <DIV style="width: 100%; text-align: center">
+        <button style="align-content: center ; text-align: center; border: 1px solid; padding: 20px ">
+          <a style="align-content: center ; text-align: center" href = "intent://arvr.google.com/scene-viewer/1.1?file=https://thinkuldeep.com/modelviewer/reatw/reatw.glb&mode=ar_only#Intent;scheme=https;package=com.google.ar.core;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;">
+            View in your space (AR View)
+          </a>
+        </button>
+      </DIV>
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+  </body>
+</html>
