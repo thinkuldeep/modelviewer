@@ -1,4 +1,4 @@
-<model-viewer src="reatw.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="0.93" environment-image="whipple_creek_regional_park_04_1k.hdr" skybox-image="whipple_creek_regional_park_04_1k.hdr" shadow-softness="1" auto-rotate camera-orbit="-0.6712deg 42.76deg 224.2m" field-of-view="30deg">
+<model-viewer src="reatw.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" auto-rotate camera-orbit="232.6deg 23.35deg 225.4m" field-of-view="30deg" environment-image="whipple_creek_regional_park_04_1k.hdr" skybox-image="whipple_creek_regional_park_04_1k.hdr">
     <div class="progress-bar hide" slot="progress-bar">
         <div class="update-bar"></div>
     </div>
