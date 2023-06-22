@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>REA TW Logo</title>
+    <meta charset="utf-8">
+    <meta name="description" content="REA TW Logo">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="reatw_o1.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster1.webp" shadow-intensity="1" camera-orbit="20deg 23deg 224.8m" field-of-view="29.84deg" environment-image="whipple_creek_regional_park_04_1k.hdr" skybox-image="whipple_creek_regional_park_04_1k.hdr" auto-rotate exposure="1.43">
+        <DIV style="width: 100%; text-align: center">
+        <button style="align-content: center ; text-align: center; border: 1px solid; padding: 20px ">
+          <a style="align-content: center ; text-align: center" href = "intent://arvr.google.com/scene-viewer/1.1?file=https://thinkuldeep.com/modelviewer/reatw/reatw_o1.glb&mode=ar_only#Intent;scheme=https;package=com.google.ar.core;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;">
+            View this model your space
+          </a>
+        </button>
+          <button style="align-content: center ; text-align: center; border: 1px solid; padding: 20px ">
+            <a style="align-content: center ; text-align: center" href = "index.html">
+              Try Option - 1
+            </a>
+          </button>
+      </DIV>
+      <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+        View in your space
+      </button>
+      <div id="ar-prompt">
+        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+      </div>
+    </model-viewer>
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+  </body>
+</html>
