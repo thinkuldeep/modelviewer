@@ -12,6 +12,15 @@ const onProgress = (event) => {
 };
 document.querySelector('model-viewer').addEventListener('progress', onProgress);
 
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
 function setupModal(id){
   var modal = document.getElementById(id+"Modal");
   var btn = document.getElementById(id+"Btn");

@@ -6,35 +6,26 @@
     <meta name="description" content="Try everything in your space - WebXR">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link type="text/css" href="./styles.css" rel="stylesheet"/>
-    <!-- OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
     <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
   </head>
   <body>
-  <br>
+
+  <div class="topnav" id="myTopnav">
+      <a href="index.html" class="active">Home</a>
+      <a href="pikachu.html">Pikachu</a>
+      <a href="reatw">REA-TW Models</a>
+      <a href="intent://arvr.google.com/scene-viewer/1.0?file=https://thinkuldeep.com/modelviewer/Astronaut.glb&mode=ar_only#Intent;scheme=https;package=com.google.ar.core;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;">AR View</a>
+      <a href="intent:#Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;component=com.google.android.calendar/com.android.calendar.AllInOneActivity;end" >Calandar</a>
+      <a href="https://thinkuldeep.com/post/try-everything-in-your-space-webxr" >thinkuldeep.com</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+      </a>
+  </div>
+
     <!-- <model-viewer> HTML element -->
     <model-viewer bounds="tight" src="Astronaut.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral" poster="poster.webp" shadow-intensity="1">
-        <DIV style="width: 100%; text-align: center; padding: 5px">
-            <button class="menu-button" >
-                <a href = "intent://arvr.google.com/scene-viewer/1.0?file=https://thinkuldeep.com/modelviewer/Astronaut.glb&mode=ar_only#Intent;scheme=https;package=com.google.ar.core;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;">
-                    Astronaut AR View
-                </a>
-            </button>
-            <button class="menu-button" >
-                <a href = "pikachu.html">
-                    Pikachu
-                </a>
-            </button>
-            <button class="menu-button" >
-                <a href = "reatw">
-                    REA-TW Models
-                </a>
-            </button>
-            <button class="menu-button" >
-                <a href = "intent:#Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;component=com.google.android.calendar/com.android.calendar.AllInOneActivity;end">
-                    Calandar
-                </a>
-            </button>
-        </DIV>
       <div class="progress-bar hide" slot="progress-bar">
           <div class="update-bar"></div>
       </div>
@@ -56,18 +47,10 @@
                     <li>Wait for some time, it will start printing, and enjoy!</li>
                 </ol>
             </div>
-
         </div>
     </model-viewer>
     <script src="script.js"></script>
     <!-- Loads <model-viewer> for browsers: -->
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-  <DIV style="width: 100%; text-align: center; padding: 5px">
-      <button class="menu-button" >
-          <a href = "https://thinkuldeep.com/post/try-everything-in-your-space-webxr">
-              Return to Article - Try everything in your space - WebXR
-          </a>
-      </button>
-  </DIV>
    </body>
 </html>
