@@ -230,3 +230,37 @@ model-viewer > #ar-prompt > img {
     text-align: left;
   }
 }
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 100%;
+  padding: 10px;
+
+}
+
+.column img {
+  margin-top: 12px;
+  text-align: center;
+  width: 400px;
+  height: 400px;
+}
+
+.column img:hover {
+  border: #04AA6D 1px solid;
+}
+
+.column a {
+  text-decoration: none;
+  text-align: center;
+  float: left;
+  font-family: Roboto Regular, Helvetica Neue, sans-serif;
+  color: #04AA6D;
+}
+
+  /* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}

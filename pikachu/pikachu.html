@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Pikachu Model - 3D Printing and ARView</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Try Pikachu in your space - WebXR">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="../styles.css" rel="stylesheet"/>
+    <!-- OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
+    <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+  <div class="topnav" id="myTopnav">
+      <a href="../index.html">Home</a>
+      <a href="../ram/ram.html">Ram Temple</a>
+      <a href="../astronaut/astronaut.html" >Astronaut</a>
+      <a href="pikachu.html" class="active">Pikachu</a>
+      <a href="../reatw">REA-TW Models</a>
+      <a href="intent://arvr.google.com/scene-viewer/1.1?file=https://thinkuldeep.com/modelviewer/pikachu/Pikachu_X_Kakashi-ar-ready.glb&mode=ar_only#Intent;scheme=https;package=com.google.ar.core;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;">AR View</a>
+      <a href="#" id="demoBtn" >Demo Video</a>
+      <a href="#" id="printBtn" >Print</a>
+      <a href="https://thinkuldeep.com/post/try-everything-in-your-space-webxr" >thinkuldeep.com</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+      </a>
+  </div>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer bounds="tight" src="Pikachu_X_Kakashi-ar-ready.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral" poster="Pikachu_Preview.png" shadow-intensity="1">
+        <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+      </div>
+        <div id="printModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span id="printModalClose" class="close">&times;</span>
+                <ol>
+                    <li>GO to Creality Printer Home > Print </li>
+                    <li>Choose the file "pikachu.gcode"</li>
+                    <li>Confirm</li>
+                    <li>Wait for some time, it will start printing, and enjoy!</li>
+                </ol>
+            </div>
+
+        </div>
+        <div id="demoModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span id="demoModalClose" class="close">&times;</span>
+                <img src="../XTPrintSmall.gif" width="100%" height="50%"/>
+            </div>
+        </div>
+    </model-viewer>
+    <script src="../script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  </body>
+</html>
